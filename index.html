@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>常用网站</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="keywords" content="常用网站" />
+	<link rel="shortcut icon" href="1.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/yidong.css" />
+
+<style>
+
+
+</style>
+		
+</head>
+
+<body style="background-image: url('./img/01.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+	<!-- 搜索栏start -->
+	<div class="baidu baidu-2">
+		<form name="f" action="https://www.baidu.com/s" target="_blank">
+			<div class="Select-box-2" id="baidu">
+			
+				<ul>
+				
+					<li class="this_s">百 度</li>
+					<li class="bing_s">必 应</li>
+					<li class="360_s">3 6 0</li>
+					<li class="baidu_s">百 度</li>
+				</ul>
+			</div>
+			<div class="in5">
+				<input name="wd" id="kw-2" maxlength="100" autocomplete="off" type="text">
+				<div class="qingkong" id="qingkong" title="清空">x</div>
+			</div>
+			<input value="搜 索" id="su-2" type="submit">
+		</form>
+		<ul class="keylist"></ul>
+	</div>
+	<!-- 搜索栏end -->
+
+	<!-- 内容start -->
+	<div class="body">
+		<div class="content">
+			<div class="jianjie">
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title1">标题1</div>
+					<ul class="jj-list-con" id="data1"></ul>		
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title2">标题2</div>
+					<ul class="jj-list-con" id="data2"></ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title3">标题3</div>
+					<ul class="jj-list-con" id="data3"></ul>
+				</div>
+							
+				
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title4">标题4</div>
+					<ul class="jj-list-con" id="data4"></ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title5">标题5</div>
+					<ul class="jj-list-con" id="data5"></ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title6">标题6</div>
+					<ul class="jj-list-con" id="data6"></ul>
+				</div>
+			</div>
+			<!-- 内容end -->
+		</div>
+
+	</div>
+<script>
+document.querySelectorAll('.link-3').forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    link.style.color = '#DCDCDC'; // 设置点击后的颜色
+    //window.location.href = link.getAttribute('href'); // 本页跳转
+	window.open(link);// 新窗口跳转
+  });
+});
+
+</script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+</body>
+
+</html>
