@@ -301,6 +301,12 @@ body {
 		text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
 		
     }
+.image-dh {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 1px; /* Optional space between image and text */
+		
+    }
 img{
 	width:15px;
 	
