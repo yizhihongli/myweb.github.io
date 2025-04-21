@@ -31,6 +31,7 @@ var data2 = [
  	      {href:'http://www.ucdrs.superlib.net/',name:'全国图书馆联盟',icon:'./img/ico/quanguotushuguanlianmeng.ico'},
       	  {href:'http://ac.scmor.com/?tdsourcetag=s_pcqq_aiomsg',name:'谷歌学术镜像',icon:'./img/ico/gugexueshu.ico'},
 	      {href:'http://www.sci-hub.ren/',name:'sci-hub',icon:'./img/ico/sci-hub.ico'},
+		   {href:'https://navi.cnki.net/knavi/journals/index',name:'知网期刊',icon:'./img/ico/zhiwang.ico'},
 ];
 
 
@@ -40,7 +41,7 @@ var title3 = "代码&存储";
 var data3 = [
           {href:'https://blog.csdn.net/u011321546',name:'SCDN',icon:'./img/ico/csdn.ico'},
           {href:'https://github.com/',name:'GitHub',icon:'./img/ico/github.ico'},
-     	  {href:'https://x-x.fun/',name:'喜讯-内容付费',icon:'./img/ico/xixun.ico'},
+     	  {href:'https://www.klgeek.com/',name:'知识极客-内容付费',icon:'./img/ico/fageka.jpg'},
           {href:'https://wwar.lanzout.com/',name:'蓝奏·云存储',icon:'./img/ico/lanzhouyun.ico'},
       	  {href:'https://www.alipan.com/',name:'阿里云盘',icon:'./img/ico/aliyunpan.ico'},
       	  {href:'https://pan.baidu.com/',name:'百度网盘',icon:'./img/ico/baiduwangpan.ico'},
@@ -54,7 +55,7 @@ var title4 = "影视";
 var data4 = [
            {href:'https://dianying.fm/',name:'电影FM',icon:'./img/ico/dianyingfm.ico'},
           {href:'http://www.zzzfun.com/',name:'ZzzFun',icon:'./img/ico/zzzfun.ico'},
-     	  {href:'https://www.dy2018.com/',name:'电影天堂',icon:'./img/ico/dianyingtiantang.ico'},
+     	  {href:'https://www.dytt8899.com/',name:'电影天堂',icon:'./img/ico/dianyingtiantang.ico'},
           {href:'http://xunjuba.kanjuba6.com/',name:'70看看',icon:'./img/ico/dzhan.ico'},
       	  {href:'http://www.dyhz1.com/',name:'电影盒子',icon:'./img/ico/dianyinghezhi.ico'},
       	  {href:'https://tools.liumingye.cn/music/#/',name:'音乐下载',icon:'./img/ico/yinyuexiazai.ico'},
@@ -85,6 +86,16 @@ var data6 = [
           {href:'https://www.soukuzhan.com/',name:'搜酷站导航',icon:'./img/ico/tongyong.png'},
      	  {href:'https://www.jianavi.com/',name:'简约导航',icon:'./img/ico/jianyuedaohang.ico'},
 ];
+//////////////标题7
+var title7 = "AI软件";
+var data7 = [
+          {href:'https://www.deepseek.com/',name:'DeepSeek',icon:'./img/ico/deepseek.ico'},
+          {href:'https://yuanbao.tencent.com/',name:'腾讯元宝',icon:'./img/ico/tengxunyuanbao.png'},
+     	  {href:'https://yiyan.baidu.com/',name:'文心一言',icon:'./img/ico/wenxin.ico'},
+		  {href:'https://chat.baidu.com/',name:'百度ai',icon:'./img/ico/baidu.ico'},
+		  {href:'https://www.doubao.com/chat/',name:'豆包',icon:'./img/ico/doubao.png'},
+		  {href:'https://kimi.moonshot.cn/',name:'KiMi',icon:'./img/ico/kimi.ico'},
+];
 
 
 Ftitle("title1",title1,"data1",data1);
@@ -93,7 +104,7 @@ Ftitle("title3",title3,"data3",data3);
 Ftitle("title4",title4,"data4",data4);
 Ftitle("title5",title5,"data5",data5);
 Ftitle("title6",title6,"data6",data6);
-
+Ftitle("title7",title7,"data7",data7);
 function Ftitle(titleid,title,dataid,data){
 	var titleData =data;
 	var content="";
