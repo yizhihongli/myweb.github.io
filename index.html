@@ -16,14 +16,46 @@
 	<link rel="stylesheet" type="text/css" href="css/yidong.css" />
 
 <style>
-
-
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .loader-inner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(0,0,0,0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
 		
 </head>
 
 <!--<body style="background-image: url('./img/01.jpg'); background-size: cover; background-repeat: no-repeat;"> -->
 <body style="background-color:#9BC0DD;">
+<div class="loader">
+  <div class="loader-inner"></div>
+</div>
+ 
+<!-- 页面其他内容 -->
+ 
+<script>
+  window.onload = function() {
+    document.querySelector('.loader').style.display = 'none';
+  };
+</script>
 	<!-- 搜索栏start -->
 	<div class="baidu baidu-2">
 		<form name="f" action="https://www.baidu.com/s" target="_blank">
@@ -72,6 +104,10 @@
 				<div class="jj-list">
 					<div class="jj-list-tit" id="title5">标题5</div>
 					<ul class="jj-list-con" id="data5"></ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit" id="title7">标题7</div>
+					<ul class="jj-list-con" id="data7"></ul>
 				</div>
 				<div class="jj-list">
 					<div class="jj-list-tit" id="title6">标题6</div>
